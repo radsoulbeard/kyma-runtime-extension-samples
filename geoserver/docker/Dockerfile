@@ -16,7 +16,7 @@ ENV GEOSERVER_CSRF_DISABLED=true
 
 #Get Geoserver and java driver for SAP HANA
 WORKDIR /geoserver
-RUN wget --no-verbose "https://freefr.dl.sourceforge.net/project/geoserver/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-bin.zip" \
+RUN wget --no-verbose --no-check-certificate "https://freefr.dl.sourceforge.net/project/geoserver/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-bin.zip" \
   && wget --no-verbose "https://repo1.maven.org/maven2/com/sap/cloud/db/jdbc/ngdbc/${NGDBC_VER}/ngdbc-${NGDBC_VER}.jar" \
   && unzip -q *.zip && rm -f *.zip \
   && mv ngdbc*.jar $(dirname $(find /geoserver/webapps -name "gt-jdbc-postgis*.jar" | head -1)) \
