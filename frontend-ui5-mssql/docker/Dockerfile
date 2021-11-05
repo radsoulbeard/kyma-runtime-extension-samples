@@ -1,9 +1,9 @@
 # build environment
 FROM node:current-slim as build
 WORKDIR /app
-COPY package.json ./
+COPY ../package.json ./
 RUN npm install
-COPY . .
+COPY ../. .
 RUN npm run-script build
 
 # production environment
