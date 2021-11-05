@@ -5,7 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Bundle app source
-COPY app /usr/src/app
+COPY database-mssql/app /usr/src/app
 
 # Grant permissions for the import-data script to be executable
 RUN chmod +x /usr/src/app/init-db.sh
