@@ -1,9 +1,9 @@
 # build environment
 FROM node:current-slim as build
 WORKDIR /app
-COPY ../package.json ./
+COPY frontend-ui5-mssql/package.json ./
 RUN npm install
-COPY ../. .
+COPY frontend-ui5-mssql/. .
 RUN npm run-script build
 
 # production environment
