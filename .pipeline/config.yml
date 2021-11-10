@@ -1,0 +1,19 @@
+general:
+  buildTool: "kaniko"
+  dockerConfigJsonSecretTextCredentialsId: "dockerhub"
+  containerImageName: "radsoulbeard/frontendui5"
+  containerRegistryUrl: "https://docker.io"
+steps:
+  kanikoExecute:
+    dockerfilePath: "frontend-ui5-mssql/docker/Dockerfile"
+  kubernetesDeploy:
+    kubeConfigSecretTextCredentialsId: "kubeconfig"
+    deployTool: "kubectl"
+    namespace: "ui5demo"
+    createDockerRegistrySecret: true
+    appTemplate: "frontend-ui5-mssql/k8s/deployment.yaml"
+stages:
+  Build:
+    kanikoExecute: true
+  Release:
+    kubernetesDeploy: true
