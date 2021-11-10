@@ -1,6 +1,6 @@
 general:
   productiveBranch: "main"
-  buildTool: "kaniko"
+  buildTool: "docker"
   dockerConfigJsonSecretTextCredentialsId: "dockerhub"
   containerImageName: "radsoulbeard/frontendui5"
   containerRegistryUrl: "https://docker.io"
