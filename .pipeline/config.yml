@@ -4,6 +4,7 @@ general:
   dockerConfigJsonSecretTextCredentialsId: "dockerhub"
   containerImageName: "radsoulbeard/frontendui5"
   containerRegistryUrl: "https://docker.io"
+  verbose: true
 steps:
   kanikoExecute:
     dockerfilePath: "frontend-ui5-mssql/docker/Dockerfile"
