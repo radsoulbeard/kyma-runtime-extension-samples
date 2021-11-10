@@ -1,4 +1,5 @@
 general:
+  productiveBranch: "main"
   buildTool: "kaniko"
   dockerConfigJsonSecretTextCredentialsId: "dockerhub"
   containerImageName: "radsoulbeard/frontendui5"
