@@ -3,6 +3,7 @@ general:
   buildTool: "docker"
   dockerConfigJsonSecretTextCredentialsId: "dockerhub"
   containerImageName: "radsoulbeard/frontendui5"
+  containerImageTag: &VERSION
   containerRegistryUrl: "https://docker.io"
 steps:
   kanikoExecute:
