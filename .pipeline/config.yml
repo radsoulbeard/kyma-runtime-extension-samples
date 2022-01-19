@@ -5,6 +5,7 @@ general:
   containerImageName: "radsoulbeard/frontendui5"
   containerImageTag: &VERSION
   containerRegistryUrl: "https://docker.io"
+  verbose: true
 steps:
   kanikoExecute:
     dockerfilePath: "frontend-ui5-mssql/docker/Dockerfile"
