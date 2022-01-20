@@ -7,6 +7,10 @@ general:
   containerRegistryUrl: "https://docker.io"
   verbose: true
 steps:
+  artifactPrepareVersion:
+    dockerVersionSource: "npm"
+    filePath: "frontend-ui5-mssql/package.json"
+    includeCommitId: false
   kanikoExecute:
     dockerfilePath: "frontend-ui5-mssql/docker/Dockerfile"
   kubernetesDeploy:
