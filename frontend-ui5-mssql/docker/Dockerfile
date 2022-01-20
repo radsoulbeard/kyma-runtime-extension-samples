@@ -8,4 +8,5 @@ RUN npm run-script build
 
 # production environment
 FROM nginx:alpine
+ENV VERSION=1.0.0
 COPY --from=build /app/dist /usr/share/nginx/html
