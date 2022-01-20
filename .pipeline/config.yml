@@ -10,7 +10,8 @@ steps:
   artifactPrepareVersion:
     dockerVersionSource: "VERSION"
     filePath: "frontend-ui5-mssql/docker/Dockerfile"
-    includeCommitId: false
+    includeCommitId: true
+    shortCommitId: true
   kanikoExecute:
     dockerfilePath: "frontend-ui5-mssql/docker/Dockerfile"
   kubernetesDeploy:
