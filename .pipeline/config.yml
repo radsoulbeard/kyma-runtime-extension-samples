@@ -8,8 +8,8 @@ general:
   verbose: true
 steps:
   artifactPrepareVersion:
-    dockerVersionSource: "npm"
-    filePath: "frontend-ui5-mssql/package.json"
+    dockerVersionSource: "FROM"
+    filePath: "frontend-ui5-mssql/docker/Dockerfile"
     includeCommitId: false
   kanikoExecute:
     dockerfilePath: "frontend-ui5-mssql/docker/Dockerfile"
