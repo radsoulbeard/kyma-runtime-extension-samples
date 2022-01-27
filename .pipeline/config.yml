@@ -25,3 +25,6 @@ stages:
     kanikoExecute: true
   Release:
     kubernetesDeploy: true
+service:
+  automatedVersioning: true
+  versionKey: "MBTJ8N12"
