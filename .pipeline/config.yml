@@ -1,9 +1,9 @@
 general:
-  productiveBranch: "main"
+  productiveBranch: ""
   buildTool: "docker"
   dockerConfigJsonSecretTextCredentialsId: "dockerhub"
   containerImageName: "radsoulbeard/frontendui5"
-  containerImageTag: &VERSION
+  containerImageTag: "latest"
   containerRegistryUrl: "https://docker.io"
   verbose: true
 steps:
