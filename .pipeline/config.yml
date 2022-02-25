@@ -3,7 +3,7 @@ general:
   buildTool: "docker"
   dockerConfigJsonSecretTextCredentialsId: "dockerhub"
   containerImageName: "radsoulbeard/frontendui5"
-  containerImageTag: '&VERSION'
+  containerImageTag: &VERSION
   containerRegistryUrl: "https://docker.io"
   verbose: true
 steps:
