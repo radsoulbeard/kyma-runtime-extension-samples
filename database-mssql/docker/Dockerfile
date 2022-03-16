@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/mssql/server:2017-CU24-ubuntu-16.04
+ENV VERSION 2017
 
 # Create app directory
 RUN mkdir -p /usr/src/app
