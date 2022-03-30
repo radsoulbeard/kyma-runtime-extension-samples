@@ -1,6 +1,5 @@
 # build environment
 FROM node:current-slim as build
-ENV VERSION 1.0.0
 WORKDIR /app
 COPY frontend-ui5-mssql/package.json ./
 RUN npm install
